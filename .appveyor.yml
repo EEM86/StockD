@@ -7,7 +7,6 @@ environment:
 platform:
     - x86
 build_script:
-    python -m venv stockdenv
     python -m pip install Flask==1.1.2
     python -m pip  install pandas==1.0.5
     python -m pip  install https://github.com/pyinstaller/pyinstaller/archive/develop.zip
