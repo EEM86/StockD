@@ -7,5 +7,5 @@ platform:
     - x86
 build_script:
     python -m pip install Flask==1.1.2
-    python -m pip install install pywebview[cef]
+    python pip install install pywebview[cef]
 
