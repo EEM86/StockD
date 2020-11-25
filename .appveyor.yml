@@ -1,6 +1,5 @@
 environment:
     matrix:
-        - PYTHON: "C:\\Python27"
         - PYTHON: "C:\\Python33"
         - PYTHON: "C:\\Python34"
         - PYTHON: "C:\\Python35"
@@ -8,5 +7,5 @@ platform:
     - x86
 build_script:
     python -m pip install Flask==1.1.2
-    python pip install https://github.com/pyinstaller/pyinstaller/archive/develop.zip
+    python -m pip install install pywebview[cef]
 
