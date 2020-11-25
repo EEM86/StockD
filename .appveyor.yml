@@ -7,11 +7,5 @@ environment:
 platform:
     - x86
 build_script:
-    python pip install Flask==1.1.2
-    python pip  install pandas==1.0.5
-    python pip  install https://github.com/pyinstaller/pyinstaller/archive/develop.zip
-    python pip  install pywebview[cef]
-    python pip  install requests==2.24.0
-
-    python pyinstaller runner.py --add-data "app\static;static" --add-data "app\templates;templates" --onefile --name "StockD_Windows" --icon ".\app\static\img\favicon.ico"
+    python -m pip install Flask
 
