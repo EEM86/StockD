@@ -8,13 +8,5 @@ platform:
     - x86
 build_script:
     python -m pip
-    python -m pyinstaller
-    python -m venv stockdenv
-    ..\..\stockdenv\Scripts\pip.exe install Flask==1.1.2
-    ..\..\stockdenv\Scripts\pip.exe  install pandas==1.0.5
-    ..\..\stockdenv\Scripts\pip.exe  install https://github.com/pyinstaller/pyinstaller/archive/develop.zip
-    ..\..\stockdenv\Scripts\pip.exe  install pywebview[cef]
-    ..\..\stockdenv\Scripts\pip.exe  install requests==2.24.0
 
-    ..\..\stockdenv\Scripts\pyinstaller.exe runner.py --add-data "app\static;static" --add-data "app\templates;templates" --onefile --name "StockD_Windows" --icon ".\app\static\img\favicon.ico"
 
